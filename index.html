@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevJamesForms</title>
+    <link rel="stylesheet" href="styles.css"></link>
+</head>
+<body>
+
+<header>
+    <h2>Welcome To My Interactive Form</h2>
+</header>
+<section class="envelope">
+   <section class="leftcol"> 
+    <form name="myForm" action="" onsubmit = "return(validate());" method="post">
+       
+    <p>
+        <label>Create Username :</label> <input type="text" id="userName" name="userName" />
+    </p>
+    <p>
+        <label>Enter First & Last Name : 
+
+        </label>
+        <input type="text" id="firstName" name="firstName"/>
+        <input type="text" id="lastName" name="lastName" />
+        
+    </p>
+   
+    <p>
+        <label>Enter Phone Number : </label><input id="phoneNumber" name="phoneNumber" placeholder="080..." />
+           
+        
+    </p>
+    <p>
+        <label> Select Country: </label><select id="countries"></select>
+    </p>
+    <p>
+        <label>Enter Email : </label><input type="email" id="email" name="email" />
+        
+    </p>
+    <p>
+        <label> Enter Date of Birth </label>
+            <input type="date" id="dob">
+        
+    </p>
+   
+    <div style="display:flex;">
+        <textarea id="aboutSelf" rows="5" cols="40" placeholder="tell us about yourself ...(maximum 100 characters)"></textarea>
+        <div id="char-length"></div>
+    </div>
+   
+    <p>
+        <label>Create Password* : </label><input type="password" id="pwd1" value="" name="password"/>
+            <span id = "message1" style="color:red"> </span> <br><br>
+        
+    </p>
+    <p>
+        <label>Confirm Password* : </label><input type="password" id="pwd2" value=""/>
+            <span id = "message2" style="color:red"> </span> <br><br>
+        
+    </p>
+    <p>
+        <input type="submit" value="Submit"  > 
+    </p>
+
+    </form>
+</section>
+<section class="rightcol">
+<img src="dxf91zhqd2z6b0bwg85ktm5s4.svg">
+</section>    
+</section>
+    <script src="script.js"></script>
+</body>
+</html>
